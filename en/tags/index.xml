@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cole World</title>
-    <link>www.hicole.me/en/tags/</link>
+    <link>https://hicole.me/en/tags/</link>
     <description>Recent content in Tags on Cole World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 27 Aug 2023 14:29:23 +0800</lastBuildDate>
-    <atom:link href="www.hicole.me/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hicole.me/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gallery</title>
-      <link>www.hicole.me/en/tags/gallery/</link>
+      <link>https://hicole.me/en/tags/gallery/</link>
       <pubDate>Sun, 27 Aug 2023 14:29:23 +0800</pubDate>
-      <guid>www.hicole.me/en/tags/gallery/</guid>
+      <guid>https://hicole.me/en/tags/gallery/</guid>
       <description></description>
     </item>
   </channel>
