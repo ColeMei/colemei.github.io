@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/en/collections/collection5/</loc>
+    <loc>www.hicole.me/en/collections/collection5/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>www.hicole.me/en/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/collections/</loc>
+    <loc>www.hicole.me/en/collections/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/gallery/</loc>
+    <loc>www.hicole.me/en/tags/gallery/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
+    <loc>www.hicole.me/en/tags/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/links/</loc>
+    <loc>www.hicole.me/en/links/</loc>
     <lastmod>2023-08-09T13:32:20+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/collections/collection4/</loc>
+    <loc>www.hicole.me/en/collections/collection4/</loc>
     <lastmod>2023-07-28T16:47:18+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/collections/collection3/</loc>
+    <loc>www.hicole.me/en/collections/collection3/</loc>
     <lastmod>2023-04-17T18:30:02+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/collections/collection2/</loc>
+    <loc>www.hicole.me/en/collections/collection2/</loc>
     <lastmod>2023-03-23T16:20:45+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/collections/collection1/</loc>
+    <loc>www.hicole.me/en/collections/collection1/</loc>
     <lastmod>2023-02-16T15:32:50+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/about/</loc>
+    <loc>www.hicole.me/en/about/</loc>
     <lastmod>2023-01-02T16:20:28+08:00</lastmod>
   </url>
 </urlset>
