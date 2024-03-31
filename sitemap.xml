@@ -2,9 +2,19 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://hicole.me/sitemap.xml</loc>
+    <loc>https://hicole.me/en/sitemap.xml</loc>
     
-      <lastmod>2023-08-27T14:29:23+08:00</lastmod>
+      <lastmod>2024-04-01T02:27:46+11:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://hicole.me/fr/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://hicole.me/it/sitemap.xml</loc>
     
   </sitemap>
   
