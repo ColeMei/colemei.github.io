@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="15 days">
+<link rel="author" href="/humans.txt">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#494f5c">
+<meta name="msapplication-TileColor" content="#494f5c">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#494f5c"><meta name="author" content="Cole"><meta name="description" content="Cole&#39;s Blog">
+<meta itemprop="name" content="Running Pentaho Data Integration on Mac bigSur (M1)">
+<meta itemprop="description" content="关于在M1 Mac 上安装部署PDI(kettle) 前言 截止我编写这篇笔记之时，Kettle并没有原生支持M1，所以本文大致思路是使用Rosetta转译运行，无需借助任何虚拟机。
+安装步骤 配置Rosetta Terminal（强制在Intel模式下运行shell） 参考 https://cutecoder.org/software/run-command-line-apple-silicon/
+打开Terminal终端的 偏好设置 → 描述文件
+从左侧选择一个你喜欢的shell → 下方省略号 → 复制描述文件
+点击新的描述文件 给它起一个好听的名字 就像“Rosetta Shell”
+右侧点击 窗口 再给它起一个好听的标题 就像“Terminal (Intel)”
+点击 shell 运行命令处写入以下 并取消勾选 在shell中运行
+env /usr/bin/arch -x86_64 ``/bin/zsh --login
+(可选) 将该shell设置为默认
+安装 Homebrew 在arm64架构中 我们需要做两种Homebrew的安装
+/usr/local/homebrew —— 服务于传统intel安装路径
+/opt/homebrew —— 服务于已原生支持Apple Silicon的包
+打开刚配置好的Rosetta Shell
+输入以下几行命令：
+cd /usr/local sudo mkdir homebrew sudo chgrp admin homebrew sudo chmod g&#43;rwx homebrew curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew 在 ～/."><meta itemprop="datePublished" content="2021-07-10T16:47:33+08:00" />
+<meta itemprop="dateModified" content="2021-07-10T16:47:33+08:00" />
+<meta itemprop="wordCount" content="289"><meta itemprop="image" content="https://picsum.photos/1920/1080/?random" />
+<meta itemprop="keywords" content="untagged," /><meta property="og:title" content="Running Pentaho Data Integration on Mac bigSur (M1)" />
+<meta property="og:description" content="关于在M1 Mac 上安装部署PDI(kettle) 前言 截止我编写这篇笔记之时，Kettle并没有原生支持M1，所以本文大致思路是使用Rosetta转译运行，无需借助任何虚拟机。
+安装步骤 配置Rosetta Terminal（强制在Intel模式下运行shell） 参考 https://cutecoder.org/software/run-command-line-apple-silicon/
+打开Terminal终端的 偏好设置 → 描述文件
+从左侧选择一个你喜欢的shell → 下方省略号 → 复制描述文件
+点击新的描述文件 给它起一个好听的名字 就像“Rosetta Shell”
+右侧点击 窗口 再给它起一个好听的标题 就像“Terminal (Intel)”
+点击 shell 运行命令处写入以下 并取消勾选 在shell中运行
+env /usr/bin/arch -x86_64 ``/bin/zsh --login
+(可选) 将该shell设置为默认
+安装 Homebrew 在arm64架构中 我们需要做两种Homebrew的安装
+/usr/local/homebrew —— 服务于传统intel安装路径
+/opt/homebrew —— 服务于已原生支持Apple Silicon的包
+打开刚配置好的Rosetta Shell
+输入以下几行命令：
+cd /usr/local sudo mkdir homebrew sudo chgrp admin homebrew sudo chmod g&#43;rwx homebrew curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew 在 ～/." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/en/posts/blog2/" /><meta property="og:image" content="https://picsum.photos/1920/1080/?random" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-10T16:47:33+08:00" />
+<meta property="article:modified_time" content="2021-07-10T16:47:33+08:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://picsum.photos/1920/1080/?random" /><meta name="twitter:title" content="Running Pentaho Data Integration on Mac bigSur (M1)"/>
+<meta name="twitter:description" content="关于在M1 Mac 上安装部署PDI(kettle) 前言 截止我编写这篇笔记之时，Kettle并没有原生支持M1，所以本文大致思路是使用Rosetta转译运行，无需借助任何虚拟机。
+安装步骤 配置Rosetta Terminal（强制在Intel模式下运行shell） 参考 https://cutecoder.org/software/run-command-line-apple-silicon/
+打开Terminal终端的 偏好设置 → 描述文件
+从左侧选择一个你喜欢的shell → 下方省略号 → 复制描述文件
+点击新的描述文件 给它起一个好听的名字 就像“Rosetta Shell”
+右侧点击 窗口 再给它起一个好听的标题 就像“Terminal (Intel)”
+点击 shell 运行命令处写入以下 并取消勾选 在shell中运行
+env /usr/bin/arch -x86_64 ``/bin/zsh --login
+(可选) 将该shell设置为默认
+安装 Homebrew 在arm64架构中 我们需要做两种Homebrew的安装
+/usr/local/homebrew —— 服务于传统intel安装路径
+/opt/homebrew —— 服务于已原生支持Apple Silicon的包
+打开刚配置好的Rosetta Shell
+输入以下几行命令：
+cd /usr/local sudo mkdir homebrew sudo chgrp admin homebrew sudo chmod g&#43;rwx homebrew curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew 在 ～/."/>
+<title>Running Pentaho Data Integration on Mac bigSur (M1)</title>
+<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="http://localhost:1313/css/style.min.2ce842e323481a58f9503922b7c8318f2723d120c473d486c802a18152ec0133.css" integrity="sha256-LOhC4yNIGlj5UDkit8gxjycj0SDEc9SGyAKhgVLsATM=" crossorigin="anonymous">
+	<style>.bg-img {background-image: url('https://picsum.photos/1920/1080/?random');}</style></head>
+<body id="page">
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="http://localhost:1313/">Cole World</a>
+				</div>
+				<nav class="site-nav hide-in-mobile"><a href="http://localhost:1313/en/posts/">Posts</a><a href="http://localhost:1313/en/collections/">Collections</a><a href="http://localhost:1313/en/about/">About</a><a href="http://localhost:1313/en/links/">Links</a></nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="img-btn" class="hdr-btn" title="Featured Image"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg></button><span class="hdr-social hide-in-mobile"><a href="https://twitter.com/coleMMM13" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://t.me/Colemei" target="_blank" rel="noopener me" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z"/></svg></a><a href="https://github.com/ColeMei" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="share-btn" class="hdr-btn" title="Share"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+ 
+<div id="share-links" class="animated fast">
+    
+    
+    
+    
+    <ul>
+        <li>
+            <a href="https://twitter.com/intent/tweet?hashtags=hermit2&amp;url=http%3a%2f%2flocalhost%3a1313%2fen%2fposts%2fblog2%2f&amp;text=Running%20Pentaho%20Data%20Integration%20on%20Mac%20bigSur%20%28M1%29" target="_blank" rel="noopener" aria-label="Share on X"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="st0" d="m21.3 21.1 -11.4 -18.2h-7.2l11.4 18.2zm-18.6 0 7.2 -6.6m4.2 -5 7.2 -6.6"/></svg></a>
+        </li>
+        <li>
+            <a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fen%2fposts%2fblog2%2f" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        </li>
+        <li>
+            <a href="mailto:?subject=Running%20Pentaho%20Data%20Integration%20on%20Mac%20bigSur%20%28M1%29&amp;body=http%3a%2f%2flocalhost%3a1313%2fen%2fposts%2fblog2%2f" target="_self" rel="noopener" aria-label="Share on Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fen%2fposts%2fblog2%2f&amp;source=http%3a%2f%2flocalhost%3a1313%2f&amp;title=Running%20Pentaho%20Data%20Integration%20on%20Mac%20bigSur%20%28M1%29&amp;summary=Running%20Pentaho%20Data%20Integration%20on%20Mac%20bigSur%20%28M1%29%2c%20by%20Cole%0a%0a%3cnil%3e%0a" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </li>
+        <li>
+            <a href="#" onclick="linkShare(&#34;Running Pentaho Data Integration on Mac bigSur (M1)&#34;,&#34;http://localhost:1313/en/posts/blog2/&#34;,&#34;Running Pentaho Data Integration on Mac bigSur (M1), by Cole\n\n\u003cnil\u003e\n&#34;); return false;" target="_self" rel="noopener" aria-label="Copy Link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></a>
+        </li>
+    </ul>
+</div><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="http://localhost:1313/en/posts/">Posts</a></li>
+			<li><a href="http://localhost:1313/en/collections/">Collections</a></li>
+			<li><a href="http://localhost:1313/en/about/">About</a></li>
+			<li><a href="http://localhost:1313/en/links/">Links</a></li>
+		</ul>
+	</div>
+
+
+	<div class="bg-img"></div>
+	<main class="site-main section-inner animated fadeIn faster"><article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jul 10, 2021</span></div>
+				<h1>Running Pentaho Data Integration on Mac bigSur (M1)</h1>
+			</header>
+			<div class="post-info"><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg><a href="" target="_blank">Cole</a></p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="http://localhost:1313/en/tags/untagged">untagged</a></span></p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>289 Words
+    … ⏲ Reading Time:
+    
+    
+    
+    1 Minute, 18 Seconds</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-07-10 18:47 &#43;1000</p></div>
+			<hr class="post-end">
+			<div class="content">
+				<h1 id="关于在m1-mac-上安装部署pdikettle">关于在M1 Mac 上安装部署PDI(kettle)<a href="#关于在m1-mac-上安装部署pdikettle" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+<ul>
+<li>
+<h2 id="前言">前言<a href="#前言" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>截止我编写这篇笔记之时，Kettle并没有原生支持M1，所以本文大致思路是使用Rosetta转译运行，无需借助任何虚拟机。</p>
+</li>
+<li>
+<h2 id="安装步骤">安装步骤<a href="#安装步骤" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li>
+<h3 id="配置rosetta-terminal强制在intel模式下运行shell">配置Rosetta Terminal（强制在Intel模式下运行shell）<a href="#配置rosetta-terminal强制在intel模式下运行shell" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<blockquote>
+<p>参考 <a href="https://cutecoder.org/software/run-command-line-apple-silicon/">https://cutecoder.org/software/run-command-line-apple-silicon/</a></p>
+</blockquote>
+<ol>
+<li>
+<p>打开Terminal终端的 <strong>偏好设置</strong> → <strong>描述文件</strong></p>
+</li>
+<li>
+<p>从左侧选择一个你喜欢的shell → 下方省略号 → <strong>复制描述文件</strong></p>
+</li>
+<li>
+<p>点击新的描述文件 给它起一个好听的名字 就像“Rosetta Shell”</p>
+</li>
+<li>
+<p>右侧点击 <strong>窗口</strong> 再给它起一个好听的标题 就像“Terminal (Intel)”</p>
+</li>
+<li>
+<p>点击 <strong>shell</strong> 运行命令处写入以下 并取消勾选 <strong>在shell中运行</strong></p>
+<p><code>env</code> <code>/usr/bin/arch</code> <code>-x86_64 ``/bin/zsh</code> <code>--login</code></p>
+</li>
+<li>
+<p>(可选) 将该shell设置为默认</p>
+</li>
+</ol>
+</li>
+<li>
+<h3 id="安装-homebrew">安装 Homebrew<a href="#安装-homebrew" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<blockquote>
+<p>在arm64架构中 我们需要做两种Homebrew的安装</p>
+<blockquote>
+<p>/usr/local/homebrew —— 服务于传统intel安装路径</p>
+<p>/opt/homebrew —— 服务于已原生支持Apple Silicon的包</p>
+</blockquote>
+</blockquote>
+<ol>
+<li>
+<p>打开刚配置好的Rosetta Shell</p>
+</li>
+<li>
+<p>输入以下几行命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /usr/local
+</span></span><span style="display:flex;"><span>sudo mkdir homebrew
+</span></span><span style="display:flex;"><span>sudo chgrp admin homebrew
+</span></span><span style="display:flex;"><span>sudo chmod g+rwx homebrew
+</span></span><span style="display:flex;"><span>curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip <span style="color:#ae81ff">1</span> -C homebrew
+</span></span></code></pre></div></li>
+<li>
+<p>在 ～/.zshrc 中加入如下行，来自动选择运行何种homebrew的安装模式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>sysctl -n sysctl.proc_translated<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    local brew_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/homebrew/bin&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    local brew_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/opt/homebrew/bin&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>brew_path<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>记得 <code> source ~/.zshrc</code> 哦～</p>
+</li>
+</ol>
+</li>
+<li>
+<h3 id="配置-java环境">配置 java环境<a href="#配置-java环境" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<blockquote>
+<p>这里需要对应Kettle和JDK 版本的对应关系 非常严格</p>
+<p><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/01.png"></p>
+<p>如果已经安装了其他版本JDK 关于mac上的多版本Java管理</p>
+<p>请参考 <a href="https://blog.csdn.net/qq_39992641/article/details/117048076">https://blog.csdn.net/qq_39992641/article/details/117048076</a></p>
+</blockquote>
+<ol>
+<li>
+<p>打开Rosetta shell 输入如下命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew tap AdoptOpenJDK/openjdk
+</span></span><span style="display:flex;"><span>brew install adoptopenjdk8 
+</span></span></code></pre></div></li>
+<li>
+<p>安装完成后 查看java版本</p>
+</li>
+</ol>
+<p><img alt="查看java版本" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/02.png"></p>
+<p>如图就成功了 我采用的是<strong>kettle9.1 + jdk8</strong></p>
+<p>所以 version 一定是要 <strong>1.8.xxx</strong>  还请注意自己的版本对应关系</p>
+</li>
+<li>
+<h3 id="下载kettle">下载Kettle<a href="#下载kettle" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<blockquote>
+<p>官方下载地址：https://sourceforge.net/projects/pentaho/files/</p>
+</blockquote>
+<p>点击选择需要的版本 → client-tools → 点击<strong>pdi-ce-xxxxxx.zip</strong>文件下载解压即可</p>
+</li>
+<li>
+<h3 id="启动kettle">启动Kettle<a href="#启动kettle" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>通过终端进入解压后得到的**/data-integration**目录，</p>
+<p>输入命令<code>sh spoon.sh</code> 等待自动启动即可（时间可能较长）</p>
+<p><img alt="启动Kettle" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/03.png"></p>
+<p>看到 <strong>Spoon -欢迎!</strong> 字样 大功告成～ 🎉</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>​</p>
+<ul>
+<li>
+<h2 id="可能出现的问题">可能出现的问题<a href="#可能出现的问题" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li>
+<p>I&rsquo;m sorry, this Mac platform [arm64] is not yet supported! Please try starting using &lsquo;Data Integration 32-bit&rsquo; or &lsquo;Data Integration 64-bit&rsquo; as appropriate.</p>
+<p><strong>报错如下</strong>：</p>
+<p><img alt="问题1-1" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/04.png"></p>
+<p><strong>分析：</strong></p>
+<p>Rosetta Termina并没有配置好 并没有用成功Rosetta转译运行 请重回 <strong>步骤1</strong> 仔细参考 <a href="https://cutecoder.org/software/run-command-line-apple-silicon/">https://cutecoder.org/software/run-command-line-apple-silicon/</a></p>
+<p><strong>另外我这篇笔记默认您安装了Rosetta 如没有安装 请您先自行安装 网上很多教程</strong></p>
+</li>
+<li>
+<p><strong>java相关问题</strong></p>
+<p><strong>报错1:</strong></p>
+<p>endorsed is not supported. Endorsed standards and standalone APIs</p>
+<p>in modular form will be supported via the concept of upgradeable modules.</p>
+<p>Error: Could not create the Java Virtual Machine.</p>
+<p>Error: A fatal exception has occurred. Program will exit.</p>
+<p><strong>分析：</strong></p>
+<p>Java JDK 版本不匹配 请下载正确对应版本 请重回 <strong>步骤3</strong></p>
+<p><img alt="问题2-1" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/05.png"></p>
+<p><strong>报错2:</strong></p>
+<p>java.lang.UnsatisfiedLinkError: Could not load SWT library. Reasons:</p>
+<p>​	no swt-cocoa-4940r23 in java.library.path</p>
+<p>​	no swt-cocoa in java.library.path</p>
+<p><strong>分析：</strong></p>
+<p>Java JDK是arm64版本的 请下载x86版本 因为很多朋友可能在了解kettle之前就在自己心爱的m1上配置了Java环境 但是oracle并没有原生适配M1 所以一般我们下载的都是arm架构的 Zulu JDK 但是由于我们的Kettle是x86</p>
+<p><strong>所以架构体系一定要对应！！！请重回步骤3</strong></p>
+<p>可以看到 下图 <code>java -version</code> 显示的虽然是jdk版本没问题 但是版本架构不对</p>
+<p><img alt="问题2-2" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/06.png"></p>
+</li>
+<li>
+<p><strong>Kettle mac 启动失败（闪退）报错 Unknown Source</strong></p>
+<blockquote>
+<p>参考 <a href="https://blog.csdn.net/qq_41066235/article/details/108668423">https://blog.csdn.net/qq_41066235/article/details/108668423</a></p>
+</blockquote>
+<p><img alt="问题3-1" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/07.png"></p>
+<p><strong>分析：</strong></p>
+<p>下载最新的eclipse.swt包，替换kettle中的原文件即可  <a href="https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.swt.cocoa.macosx.x86_64">下载地址</a></p>
+<p>替换路径：data-integration → libswt → osx64</p>
+<p><img alt="问题3-2" src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog2/08.png"></p>
+</li>
+</ol>
+</li>
+</ul>
+<p>​</p>
+<ul>
+<li>
+<h2 id="结语">结语<a href="#结语" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>M1可真是个磨人的小妖精～ Rosetta的转译不知道后续还会遇到什么bug</p>
+<p>期待后续的Kettle学习之路～ 💪</p>
+</li>
+</ul>
+
+			</div>
+
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="http://localhost:1313/en/posts/this-is-my-first-blog/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>This is my first blog</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+	<p>
+		&copy; 2024 <a href="http://localhost:1313/">Cole</a>
+		&#183;  &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>
+		&#183; Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
+		&#183; Theme <a href="https://github.com/1bl4z3r/hermit-V2" target="_blank" rel="noopener">Hermit-V2</a>
+		
+		&#183; <a href="http://localhost:1313/en/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		
+	</p>
+
+</footer>
+
+<a href="#" class="scroll-up"><svg xmlns="http://www.w3.org/2000/svg" fill="#3B3E48" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" id="up-circle" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" stroke="#3B3E48" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.9600000000000002"><circle id="primary" cx="12" cy="12" r="10" style="fill: #3B3E48;"></circle><path id="secondary" d="M15,14a1,1,0,0,1-.71-.29L12,11.41l-2.29,2.3a1,1,0,0,1-1.42-1.42l3-3a1,1,0,0,1,1.42,0l3,3a1,1,0,0,1,0,1.42A1,1,0,0,1,15,14Z" style="fill: #018574;"></path></g><g id="SVGRepo_iconCarrier"><circle id="primary" cx="12" cy="12" r="10" style="fill: #3B3E48;"></circle><path id="secondary" d="M15,14a1,1,0,0,1-.71-.29L12,11.41l-2.29,2.3a1,1,0,0,1-1.42-1.42l3-3a1,1,0,0,1,1.42,0l3,3a1,1,0,0,1,0,1.42A1,1,0,0,1,15,14Z" style="fill: #018574;"></path></g></svg></a>
+<noscript>
+    <a href="#" class="scroll-up show"><svg xmlns="http://www.w3.org/2000/svg" fill="#3B3E48" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" id="up-circle" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" stroke="#3B3E48" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.9600000000000002"><circle id="primary" cx="12" cy="12" r="10" style="fill: #3B3E48;"></circle><path id="secondary" d="M15,14a1,1,0,0,1-.71-.29L12,11.41l-2.29,2.3a1,1,0,0,1-1.42-1.42l3-3a1,1,0,0,1,1.42,0l3,3a1,1,0,0,1,0,1.42A1,1,0,0,1,15,14Z" style="fill: #018574;"></path></g><g id="SVGRepo_iconCarrier"><circle id="primary" cx="12" cy="12" r="10" style="fill: #3B3E48;"></circle><path id="secondary" d="M15,14a1,1,0,0,1-.71-.29L12,11.41l-2.29,2.3a1,1,0,0,1-1.42-1.42l3-3a1,1,0,0,1,1.42,0l3,3a1,1,0,0,1,0,1.42A1,1,0,0,1,15,14Z" style="fill: #018574;"></path></g></svg></a>
+</noscript>
+<script async src="http://localhost:1313/js/scrollwatcher.min.11bd2ce6f91dfb64095448b76ac1930124a42dc7133488e6d3d5aae7badaf562.js" integrity="sha256-Eb0s5vkd+2QJVEi3asGTASSkLccTNIjm09Wq57ra9WI=" crossorigin="anonymous"></script>
+<script async src="http://localhost:1313/js/bundle.min.038214de9d568246fadcfeb06c69349925de3209f332ec123861b6aa031d63c6.js" integrity="sha256-A4IU3p1Wgkb63P6wbGk0mSXeMgnzMuwSOGG2qgMdY8Y=" crossorigin="anonymous"></script><script async src="http://localhost:1313/js/link-share.min.24409a4f6e5537d70ffc55ec8f9192208d718678cb8638585342423020b37f39.js" integrity="sha256-JECaT25VN9cP/FXsj5GSII1xhnjLhjhYU0JCMCCzfzk=" crossorigin="anonymous"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<script type="text/javascript" id="MathJax-script" async src="http://localhost:1313/js/mathjaxs.min.ca29e9d446b2a6cb6c6e3eb0d47e9693f5c306c146eaccb43047afbf31b07a6f.js" integrity="sha256-yinp1Eaypstsbj6w1H6Wk/XDBsFG6sy0MEevvzGwem8=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
