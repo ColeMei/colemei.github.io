@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hicole.me/en/collections/collection5/</loc>
+    <lastmod>2023-08-27T14:29:23+08:00</lastmod>
+  </url><url>
     <loc>https://hicole.me/en/</loc>
-    <lastmod>2024-04-01T02:27:46+11:00</lastmod>
+    <lastmod>2023-08-27T14:29:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -19,12 +22,6 @@
                 hreflang="en"
                 href="https://hicole.me/en/"
                 />
-  </url><url>
-    <loc>https://hicole.me/en/posts/</loc>
-    <lastmod>2024-04-01T02:27:46+11:00</lastmod>
-  </url><url>
-    <loc>https://hicole.me/en/collections/collection5/</loc>
-    <lastmod>2023-08-27T14:29:23+08:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/collections/</loc>
     <lastmod>2023-08-27T14:29:23+08:00</lastmod>
@@ -67,5 +64,25 @@
   </url><url>
     <loc>https://hicole.me/en/about/</loc>
     <lastmod>2023-01-02T16:20:28+08:00</lastmod>
+  </url><url>
+    <loc>https://hicole.me/en/posts/</loc>
+    <lastmod>2023-01-02T14:56:19+08:00</lastmod>
+  </url><url>
+    <loc>https://hicole.me/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://hicole.me/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://hicole.me/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hicole.me/en/categories/"
+                />
   </url>
 </urlset>

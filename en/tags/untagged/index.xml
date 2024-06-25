@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Untagged on Cole World</title>
-    <link>http://localhost:56873/en/tags/untagged/</link>
+    <link>http://localhost:1313/en/tags/untagged/</link>
     <description>Recent content in Untagged on Cole World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2024 02:27:46 +1100</lastBuildDate>
-    <atom:link href="http://localhost:56873/en/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog1</title>
-      <link>http://localhost:56873/en/posts/blog1/</link>
-      <pubDate>Mon, 01 Apr 2024 02:27:46 +1100</pubDate>
-      <guid>http://localhost:56873/en/posts/blog1/</guid>
-      <description></description>
+      <title>This is my first blog</title>
+      <link>http://localhost:1313/en/posts/blog1/</link>
+      <pubDate>Mon, 02 Jan 2023 14:56:19 +0800</pubDate>
+      <guid>http://localhost:1313/en/posts/blog1/</guid>
+      <description>Hello Hugo! The world’s fastest framework for building websites</description>
     </item>
   </channel>
 </rss>
