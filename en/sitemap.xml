@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hicole.me/en/tags/blog/</loc>
+    <lastmod>2024-07-17T15:31:50+10:00</lastmod>
+  </url><url>
     <loc>https://hicole.me/en/</loc>
-    <lastmod>2024-01-15T15:47:31+08:00</lastmod>
+    <lastmod>2024-07-17T15:31:50+10:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -20,11 +23,14 @@
                 href="https://hicole.me/en/"
                 />
   </url><url>
+    <loc>https://hicole.me/en/posts/new-features-in-blog-2.0/</loc>
+    <lastmod>2024-07-17T15:31:50+10:00</lastmod>
+  </url><url>
     <loc>https://hicole.me/en/posts/</loc>
-    <lastmod>2024-01-15T15:47:31+08:00</lastmod>
+    <lastmod>2024-07-17T15:31:50+10:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/tags/</loc>
-    <lastmod>2024-01-15T15:47:31+08:00</lastmod>
+    <lastmod>2024-07-17T15:31:50+10:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -41,10 +47,10 @@
                 href="https://hicole.me/en/tags/"
                 />
   </url><url>
-    <loc>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.15-7.17/</loc>
+    <loc>https://hicole.me/en/tags/trips/</loc>
     <lastmod>2024-01-15T15:47:31+08:00</lastmod>
   </url><url>
-    <loc>https://hicole.me/en/tags/untagged/</loc>
+    <loc>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.15-7.17/</loc>
     <lastmod>2024-01-15T15:47:31+08:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.12-7.14/</loc>
@@ -59,10 +65,16 @@
     <loc>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.1-7.3/</loc>
     <lastmod>2023-11-11T16:49:29+08:00</lastmod>
   </url><url>
+    <loc>https://hicole.me/en/tags/expierence-sharing/</loc>
+    <lastmod>2023-11-07T14:52:18+08:00</lastmod>
+  </url><url>
     <loc>https://hicole.me/en/posts/recall-and-review-of-the-ielts-test-on-november-6th/</loc>
     <lastmod>2023-11-07T14:52:18+08:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/posts/self-host-deployment-of-rsshub/</loc>
+    <lastmod>2023-09-11T23:50:36+08:00</lastmod>
+  </url><url>
+    <loc>https://hicole.me/en/tags/tutorial/</loc>
     <lastmod>2023-09-11T23:50:36+08:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/collections/collection5/</loc>
@@ -77,6 +89,9 @@
     <loc>https://hicole.me/en/posts/booksthe-road-to-serfdom/</loc>
     <lastmod>2023-08-12T16:00:32+08:00</lastmod>
   </url><url>
+    <loc>https://hicole.me/en/tags/reading/</loc>
+    <lastmod>2023-08-12T16:00:32+08:00</lastmod>
+  </url><url>
     <loc>https://hicole.me/en/links/</loc>
     <lastmod>2023-08-09T13:32:20+08:00</lastmod>
   </url><url>
@@ -86,7 +101,10 @@
     <loc>https://hicole.me/en/posts/tripsinner-mongolia-6.10-6.15/</loc>
     <lastmod>2023-06-22T10:40:43+08:00</lastmod>
   </url><url>
-    <loc>https://hicole.me/en/posts/acknowledgement-on-my-graduation-thesis/</loc>
+    <loc>https://hicole.me/en/posts/acknowledgement/</loc>
+    <lastmod>2023-05-23T11:32:10+08:00</lastmod>
+  </url><url>
+    <loc>https://hicole.me/en/tags/thinkingfeeling/</loc>
     <lastmod>2023-05-23T11:32:10+08:00</lastmod>
   </url><url>
     <loc>https://hicole.me/en/collections/collection3/</loc>
@@ -116,21 +134,7 @@
     <loc>https://hicole.me/en/posts/running-pentaho-data-integration-on-mac-bigsur-m1/</loc>
     <lastmod>2021-07-10T16:47:33+08:00</lastmod>
   </url><url>
-    <loc>https://hicole.me/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://hicole.me/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://hicole.me/it/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hicole.me/en/categories/"
-                />
+    <loc>https://hicole.me/en/tags/skillset/</loc>
+    <lastmod>2021-07-10T16:47:33+08:00</lastmod>
   </url>
 </urlset>

@@ -5,8 +5,109 @@
 		<description>Recent content in Posts on Cole World</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
-		<lastBuildDate>Mon, 15 Jan 2024 15:47:31 +0800</lastBuildDate>
+		<lastBuildDate>Wed, 17 Jul 2024 15:31:50 +1000</lastBuildDate>
 		<atom:link href="https://hicole.me/en/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>New features in Blog 2.0</title>
+			<link>https://hicole.me/en/posts/new-features-in-blog-2.0/</link>
+			<pubDate>Wed, 17 Jul 2024 15:31:50 +1000</pubDate>
+			
+			<guid>https://hicole.me/en/posts/new-features-in-blog-2.0/</guid>
+			<description><![CDATA[This explains some implementation details of new features]]></description>
+			<content type="html"><![CDATA[<h1 id="admonition-shortcode">Admonition Shortcode</h1>
+
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">A <strong>tip</strong> banner</div>
+    </aside>
+
+    <aside class="admonition note">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></div><b>This is a note</b>
+        </div>
+        <div class="admonition-content">A <strong>note</strong> banner</div>
+    </aside>
+
+    <aside class="admonition info">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></div><b>This is a info</b>
+        </div>
+        <div class="admonition-content">A <strong>info</strong> banner</div>
+    </aside>
+
+    <aside class="admonition success">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div><b>This is a success</b>
+        </div>
+        <div class="admonition-content">A <strong>success</strong> banner</div>
+    </aside>
+
+    <aside class="admonition warning">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div><b>This is a warning</b>
+        </div>
+        <div class="admonition-content">A <strong>warning</strong> banner</div>
+    </aside>
+
+    <aside class="admonition failure">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></div><b>This is a failure</b>
+        </div>
+        <div class="admonition-content">A <strong>failure</strong> banner</div>
+    </aside>
+
+    <aside class="admonition danger">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div><b>This is a danger</b>
+        </div>
+        <div class="admonition-content">A <strong>danger</strong> banner</div>
+    </aside>
+
+    <aside class="admonition bug">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div><b>This is a bug</b>
+        </div>
+        <div class="admonition-content">A <strong>bug</strong> banner</div>
+    </aside>
+<h1 id="mathjax-support-demo">MathJax Support Demo</h1>
+<p>\begin{equation}
+\int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \frac{1}{1 + x_1 x_2 x_3 x_4} , dx_4 , dx_3 , dx_2 , dx_1
+\end{equation}</p>
+<p>\begin{equation}
+\mathcal{L}{f(t)} = \int_{0}^{\infty} e^{-st} f(t) , dt = F(s)
+\end{equation}</p>
+<p>\begin{align}
+\nabla \cdot \mathbf{E} &amp;= \frac{\rho}{\epsilon_0} \
+\nabla \cdot \mathbf{B} &amp;= 0 \
+\nabla \times \mathbf{E} &amp;= -\frac{\partial \mathbf{B}}{\partial t} \
+\nabla \times \mathbf{B} &amp;= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{align}</p>
+<p>\begin{equation}
+f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n \pi x}{L} + b_n \sin \frac{n \pi x}{L} \right)
+\end{equation}</p>
+<p>\begin{equation}
+f(a) = \frac{1}{2\pi i} \oint_{\gamma} \frac{f(z)}{z-a} , dz
+\end{equation}</p>
+<p>\begin{equation}
+x^n + y^n = z^n \quad \text{for} \quad n &gt; 2 \quad \text{has no non-zero integer solutions}
+\end{equation}</p>
+<p>\begin{equation}
+R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R + g_{\mu\nu}\Lambda = \frac{8\pi G}{c^4}T_{\mu\nu}
+\end{equation}</p>
+<p>\begin{equation}
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+\end{equation}</p>
+<p>\begin{equation}
+\rho \left( \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f}
+\end{equation}</p>
+<p>\begin{equation}
+A = U \Lambda U^*
+\end{equation}</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Trips|North of Xinjiang 7.15-7.17</title>
@@ -14,8 +115,15 @@
 			<pubDate>Mon, 15 Jan 2024 15:47:31 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.15-7.17/</guid>
-			<description><![CDATA[本文是北疆之行系列的第五篇]]></description>
-			<content type="html"><![CDATA[<h1 id="hahahugoshortcode20s0hbhb">
+			<description><![CDATA[The fifth in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">本文是北疆之行系列的第五篇</div>
+    </aside>
+<h1 id="hahahugoshortcode21s1hbhb">
 
 <p style="text-align:center">Day15</p>
 </h1>
@@ -44,7 +152,7 @@
       </figcaption></figure>
 <h3 id="库车王府">库车王府</h3>
 <p>库车市是古龟兹国的所在地，市区里遍布着很多纵横交错的商业街和一些人文景点。我们到库车时天色还早，便拜访了比较有名的库车王府，走马观花，就当是一个迷你博物馆闲逛了一圈，随后便入住宾馆休息了。</p>
-<h1 id="hahahugoshortcode20s6hbhb">
+<h1 id="hahahugoshortcode21s7hbhb">
 
 <p style="text-align:center">Day16</p>
 </h1>
@@ -69,7 +177,7 @@
 <h3 id="吐鲁番">吐鲁番</h3>
 <p>时至今日，时隔近半年的时间，我还是能在脑中构想出，在吐鲁番市区内，第一次钻出车舱迎面袭来的那股高温热浪。行走在市区内，我们三个人都一致对吐鲁番的常住人口是怎样忍耐如此高温环境表示诧异和难以置信。</p>
 <p>真的太热了，这是我最直接的感受，打开手机天气证实一下，果然：42度。这还是在七月的中旬，不知道九十月份这里又会是怎样的一种窒息感。本来计划在市区内逛逛，买点儿水果点心什么的，但是吃完饭以后实在是热得难以忍受，就回宾馆吹空调了。</p>
-<h1 id="hahahugoshortcode20s10hbhb">
+<h1 id="hahahugoshortcode21s11hbhb">
 
 <p style="text-align:center">Day17</p>
 </h1>
@@ -112,8 +220,15 @@
 			<pubDate>Fri, 12 Jan 2024 20:39:04 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.12-7.14/</guid>
-			<description><![CDATA[本文是北疆之行系列的第四篇]]></description>
-			<content type="html"><![CDATA[<h1 id="hahahugoshortcode19s0hbhb">
+			<description><![CDATA[The fourth in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">本文是北疆之行系列的第四篇</div>
+    </aside>
+<h1 id="hahahugoshortcode20s1hbhb">
 
 <p style="text-align:center">Day12</p>
 </h1>
@@ -154,7 +269,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog15/38DE19B3-AA5E-40D5-97EE-10BE3BB179B7.jpg"alt="image"/><figcaption>
         <p>把胃吃坏了</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode19s7hbhb">
+<h1 id="hahahugoshortcode20s8hbhb">
 
 <p style="text-align:center">Day13</p>
 </h1>
@@ -230,7 +345,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog15/BBE0C7DB-128B-4FED-AF82-49A937EF4789.jpg"alt="image"/><figcaption>
         <p>阔别已久的川菜</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode19s24hbhb">
+<h1 id="hahahugoshortcode20s25hbhb">
 
 <p style="text-align:center">Day14</p>
 </h1>
@@ -333,8 +448,15 @@
 			<pubDate>Tue, 28 Nov 2023 23:30:44 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.9-7.11/</guid>
-			<description><![CDATA[本文是北疆之行系列的第三篇]]></description>
-			<content type="html"><![CDATA[<h1 id="hahahugoshortcode22s0hbhb">
+			<description><![CDATA[The third in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">本文是北疆之行系列的第三篇</div>
+    </aside>
+<h1 id="hahahugoshortcode22s1hbhb">
 
 <p style="text-align:center">Day9</p>
 </h1>
@@ -412,7 +534,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog14/98D05F63-351B-434F-BA7E-4E35E58714EA.jpg"alt="image"/><figcaption>
         <p>巴特利特</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode22s14hbhb">
+<h1 id="hahahugoshortcode22s15hbhb">
 
 <p style="text-align:center">Day10</p>
 </h1>
@@ -522,7 +644,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog14/IMG_3543.jpeg"alt="image"/><figcaption>
         <p>凌晨两点的星空</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode22s36hbhb">
+<h1 id="hahahugoshortcode22s37hbhb">
 
 <p style="text-align:center">Day11</p>
 </h1>
@@ -642,9 +764,15 @@
 			<pubDate>Mon, 20 Nov 2023 23:22:30 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.4-7.8/</guid>
-			<description><![CDATA[本文是北疆之行系列的第二篇]]></description>
-			<content type="html"><![CDATA[<p>本文是北疆之行系列的第二篇。</p>
-<h1 id="hahahugoshortcode21s0hbhb">
+			<description><![CDATA[The second in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">本文是北疆之行系列的第二篇</div>
+    </aside>
+<h1 id="hahahugoshortcode23s1hbhb">
 
 <p style="text-align:center">Day4</p>
 </h1>
@@ -686,7 +814,7 @@
   <iframe src="https://www.youtube.com/embed/MhN2eaRInQk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h1 id="hahahugoshortcode21s6hbhb">
+<h1 id="hahahugoshortcode23s7hbhb">
 
 <p style="text-align:center">Day5</p>
 </h1>
@@ -780,7 +908,7 @@
         <p>原始森林间的一条徒步路线</p>
       </figcaption></figure>
 <p>这天晚饭时，我们特意找了一家餐厅，专门点了很多很多绿叶菜吃来补充，调解了一下膳食平衡。</p>
-<h1 id="hahahugoshortcode21s24hbhb">
+<h1 id="hahahugoshortcode23s25hbhb">
 
 <p style="text-align:center">Day6</p>
 </h1>
@@ -829,7 +957,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog13/98CC478F-AC71-4857-92A0-C0AE466D41DB.JPG"alt="image"/><figcaption>
         <p>无限接近边境！</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode21s33hbhb">
+<h1 id="hahahugoshortcode23s34hbhb">
 
 <p style="text-align:center">Day7</p>
 </h1>
@@ -941,7 +1069,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog13/1F81166B-3564-468A-AEEE-A3CFC2095ABB.JPG"alt="image"/><figcaption>
         <p>与五彩滩分别</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode21s56hbhb">
+<h1 id="hahahugoshortcode23s57hbhb">
 
 <p style="text-align:center">Day8</p>
 </h1>
@@ -997,14 +1125,21 @@
 			<pubDate>Sat, 11 Nov 2023 16:49:29 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/tripsnorth-of-xinjiang-7.1-7.3/</guid>
-			<description><![CDATA[本文是北疆之行系列的第一篇]]></description>
-			<content type="html"><![CDATA[<h2 id="intro">Intro</h2>
+			<description><![CDATA[The first in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">本文是北疆之行系列的第二篇</div>
+    </aside>
+<h2 id="intro">Intro</h2>
 <p>随着雅思备考的结束，相关事务也处理了七七八八，大体总还算顺利，留学的准备工作算是暂时告一段落。于是，我也终于空出大段的时间可以好好整理一下今年7月份的这趟耗时17天的公路旅行。</p>
 <p>新疆，准确的说是北疆，是我毕业旅行的第二站。从7月1日起至7月17日乘飞机返乡，我与同行的两位朋友驾驶一辆白色的哈佛大狗，穿越了新疆北部的大部分土地。旅行结束之际，从Google Map上回顾，整个itinerary像是画了一个大圆：奔走于山河壮美的同时，我们屡次拜访了祖国的边境与口岸，也屡次深入腹地、荒地。最后还车时，仪表盘上的行驶里程数停在了4701.9km。（我们刚提车时是60多公里）</p>
 <p>这次旅行无疑是令人难忘的，是酣畅淋漓而现在回想起来仍意犹未尽的。尽管充斥着许多始料未及与措手不及，这趟旅程还是带来了太多的体验、太多的第一次：第一次露营、第一次雨中徒步、第一次骑马飞驰穿越溪流与沟壑、第一次住房车、第一次在漫天繁星的草原上喝乌苏&hellip;&hellip;</p>
 <p>于是在此，借blog的形式，我准备将一些比较满意的照片作品在这里作以展示与留念，点缀一些文字寥寥，试图真诚地连结那些并不遥远的记忆。</p>
 <hr>
-<h1 id="hahahugoshortcode18s0hbhb">
+<h1 id="hahahugoshortcode19s1hbhb">
 
 <p style="text-align:center">Day1</p>
 </h1>
@@ -1025,7 +1160,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog12/IMG_2538.jpeg"alt="image"/><figcaption>
         <p>We&rsquo;re Ready!</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode18s2hbhb">
+<h1 id="hahahugoshortcode19s3hbhb">
 
 <p style="text-align:center">Day2</p>
 </h1>
@@ -1105,7 +1240,7 @@
 <figure><img src="https://raw.githubusercontent.com/ColeMei/Picgo/master/blog12/IMG_2726.jpeg"alt="image"/><figcaption>
         <p>超香的囊坑肉</p>
       </figcaption></figure>
-<h1 id="hahahugoshortcode18s19hbhb">
+<h1 id="hahahugoshortcode19s20hbhb">
 
 <p style="text-align:center">Day3</p>
 </h1>
@@ -1389,7 +1524,7 @@
 <li>随着很多网站的政策更新，获取其内容所需要的条件越来越苛刻，像是API、Cookies、Token等信息需要预配置。</li>
 </ol>
 <p>好在RSSHub的生态还算完整，对于自建这样一个相对小众的需求也有比较详细（当然还不够！不然我也不写这篇blog了）的文档支持。</p>
-<h1 id="hahahugoshortcode10s2hbhb">
+<h1 id="hahahugoshortcode16s2hbhb">
 
 <p style="text-align:center">折腾开始！</p>
 </h1>
@@ -1437,7 +1572,7 @@
 </ol>
 <p>更详细的部署教程（step by step）可以参考这篇Guide：<a href="https://www.cnblogs.com/QiuSYan/p/RssHub.html">RssHub + Vercel ：在 Vercel 上免费部署你的RssHub</a>。</p>
 <p>至此，专属于我自己的RSSHub就已经部署在了Vercel为我提供的Domain下，点击visit即可看到Welcome Page。</p>
-<h1 id="hahahugoshortcode10s4hbhb">
+<h1 id="hahahugoshortcode16s4hbhb">
 
 <p style="text-align:center">Bingo！</p>
 </h1>
@@ -1499,7 +1634,7 @@
         <p>最后的验证</p>
       </figcaption></figure>
 <p>可以看到，上面的GIF中，我先点击的是自建域名下生成的新订阅中的文章（全文），后点击的是老的订阅源中的文章（部分）</p>
-<h1 id="hahahugoshortcode10s11hbhb">
+<h1 id="hahahugoshortcode16s11hbhb">
 
 <p style="text-align:center">Perfect！</p>
 </h1>
@@ -1517,7 +1652,7 @@
 			<pubDate>Sat, 12 Aug 2023 16:00:32 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/booksthe-road-to-serfdom/</guid>
-			<description><![CDATA[]]></description>
+			<description><![CDATA[Some Reflections on Liberalism and Insinuations from the Current Reality of Society]]></description>
 			<content type="html"><![CDATA[<h1 id="一些关于自由主义的思考和当下现实社会的影射">一些关于自由主义的思考和当下现实社会的影射</h1>
 <h2 id="preface">Preface</h2>
 <p>现在回想起来，最初了解到这本书并不是瞥见于某个图书网站的Rank List或是源自某个up主的Recommendation，而是从V2EX中的一个帖子里看到的，那个帖子的主题好像是”2022年你读过最棒(最有意义/最振聋发聩/最值得推荐，等等具体的那个形容词我记不清了)的一本书“。</p>
@@ -2018,12 +2153,12 @@
 		</item>
 		
 		<item>
-			<title>Acknowledgement (On my Graduation Thesis)</title>
-			<link>https://hicole.me/en/posts/acknowledgement-on-my-graduation-thesis/</link>
+			<title>Acknowledgement</title>
+			<link>https://hicole.me/en/posts/acknowledgement/</link>
 			<pubDate>Tue, 23 May 2023 11:32:10 +0800</pubDate>
 			
-			<guid>https://hicole.me/en/posts/acknowledgement-on-my-graduation-thesis/</guid>
-			<description><![CDATA[]]></description>
+			<guid>https://hicole.me/en/posts/acknowledgement/</guid>
+			<description><![CDATA[On my Graduation Thesis]]></description>
 			<content type="html"><![CDATA[<p>我是一个时常联想不同时空的人，想回不到的从前，想遥远的将来，但我似乎从没有在哪一次深夜或是某一次发呆时畅想过我会如何写这段将会出现在毕业论文最后的致谢。</p>
 <p>老实讲，毕业意味着什么我说不清，我也不知道毕业那天会发生什么，多少人会哭，多少人会笑，多少人会骂骂咧咧，多少人会不回头。但我想，多年后，提起大学生活，我所怀念的不会是作为符号存在的“河北科技大学”，而是翻阅过的每一封书卷，是伙伴们的挑灯夜话，是牧星湖畔的风，是图书馆两侧的石阶路，是不断的自我怀疑与反思，是一次次挑战，是与他人跳动的联结，也是爱。</p>
 <p>当然，闪烁其间的一定还有教育的自由，借用一下David Foster Wallace在毕业致辞中的一段话<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>：“To be just a little less arrogant. To have just a little critical awareness about myself and my certainties. Because a huge percentage of the stuff that I tend to be automatically certain of is, it turns out, totally wrong and deluded. I have learned this the hard way, as I predict you graduates will, too.”</p>
@@ -2056,8 +2191,15 @@
 			<pubDate>Thu, 13 Apr 2023 09:58:24 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/my-english-reading-flow--collection/</guid>
-			<description><![CDATA[这是My Reading Flow （For English Source）系列博客的第三篇]]></description>
-			<content type="html"><![CDATA[<p>讲完了如何阅读，下面来聊聊整条flow的最后一个环节，<strong>Collection</strong> — 对读过的文章进行收录。其实在第二部分Read中，我当时就谈及了一些关于收录的事情。</p>
+			<description><![CDATA[The third in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">这是My Reading Flow （For English Source）系列博客的第三篇</div>
+    </aside>
+<p>讲完了如何阅读，下面来聊聊整条flow的最后一个环节，<strong>Collection</strong> — 对读过的文章进行收录。其实在第二部分Read中，我当时就谈及了一些关于收录的事情。</p>
 <p>但是必须要说的是，Collection<strong>并不是</strong>一个阅读流中必不可少的环节。像有很多朋友觉得这些不过是伪需求，疲于形式。但就像我在之前的Q&amp;A中谈到的一点我的理解（很主观）：纵使你真的不会再想起这些你收录的内容（当然，你有很大的可能会有用得到它们的时候，它相当于为你读过的信息加上索引，方便你回顾、引用，这是它的<strong>实际意义</strong>），收录行为也会为你的阅读带来完整性，完整性又带来仪式感，这些都潜移默化地强化着你的阅读体验，帮助你日复一日养成阅读的习惯，明晰阅读的意义（算是种<strong>精神意义</strong>吧）。</p>
 <p>而特别对于像我本人这种有点<a href="https://zh.wikipedia.org/zh-tw/%E8%97%8F%E4%B9%A6%E7%99%96">收藏癖</a>的情况，看着被填得满满当当的database，真的很爽啊拜托！</p>
 <p>在明确了Collection并不是一项可有可无的工作后，来聊聊我是怎样做收录的。</p>
@@ -2184,7 +2326,7 @@
 <p>相信我，搭配Gallery View可以将你的Collection打造得<strong>井然有序且质感十足</strong>。</p>
 <h2 id="小结">小结</h2>
 <p>其实很多阅读工具中都自带一些类似的收录功能，像是Apple News+中的Saved Story和Hisroty、Reeder中的Star和Add to Read Later，甚至是Chrome中的Bookmark，Mail中的Flag。但是我还是更喜欢将不同平台，不同种类篇幅的信息作统一的收录，像是我在Notion的database中做的这样，毕竟术业有专攻嘛。</p>
-<h1 id="hahahugoshortcode16s11hbhb">
+<h1 id="hahahugoshortcode15s12hbhb">
 
 <p style="text-align:center">完结撒花～🎉</p>
 </h1>
@@ -2197,8 +2339,15 @@
 			<pubDate>Sun, 09 Apr 2023 21:37:52 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/my-english-reading-flow--read/</guid>
-			<description><![CDATA[这是My Reading Flow （For English Source）系列博客的第二篇]]></description>
-			<content type="html"><![CDATA[<p>在上一节中讲完了有关如何获取信息，下面我们回到阅读本身。我大致将我的阅读分为两种，不过思来想去，还是觉得不能直接划分为精读和粗读这样泾渭分明的简单定义，因为其实我读的都挺认真的。可能从阅读的目的或者说是侧重点来讲会更好，第一种阅读是偏向于语料的积累和提高语言的赏析能力，另一种则是以信息的获取为首要目的的阅读。</p>
+			<description><![CDATA[The second in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">这是My Reading Flow （For English Source）系列博客的第二篇</div>
+    </aside>
+<p>在上一节中讲完了有关如何获取信息，下面我们回到阅读本身。我大致将我的阅读分为两种，不过思来想去，还是觉得不能直接划分为精读和粗读这样泾渭分明的简单定义，因为其实我读的都挺认真的。可能从阅读的目的或者说是侧重点来讲会更好，第一种阅读是偏向于语料的积累和提高语言的赏析能力，另一种则是以信息的获取为首要目的的阅读。</p>
 <h2 id="type-1">Type 1</h2>
 <blockquote>
 <p>工具：PDF Expert + Eudic</p>
@@ -2315,7 +2464,7 @@
 </li>
 </ul>
 <p>总的来说，利用各种效率工具和插件打磨并适配你的专属阅读流本身就是一件非常自我且乐在其中的事，我可能会就这样一直tinker下去。^o^</p>
-<h1 id="hahahugoshortcode8s10hbhb">
+<h1 id="hahahugoshortcode8s11hbhb">
 
 <p style="text-align:center">下期再见～👋</p>
 </h1>
@@ -2328,8 +2477,15 @@
 			<pubDate>Thu, 06 Apr 2023 10:18:11 +0800</pubDate>
 			
 			<guid>https://hicole.me/en/posts/my-english-reading-flow--source/</guid>
-			<description><![CDATA[这是My Reading Flow （For English Source）系列博客的第一篇]]></description>
-			<content type="html"><![CDATA[<p>首先，第一节中，我们来聊聊信息的来源。开门见山，我获取英文信息的渠道基本如下：</p>
+			<description><![CDATA[The first in a series]]></description>
+			<content type="html"><![CDATA[
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div><b>This is a tip</b>
+        </div>
+        <div class="admonition-content">这是My Reading Flow （For English Source）系列博客的第一篇</div>
+    </aside>
+<p>首先，第一节中，我们来聊聊信息的来源。开门见山，我获取英文信息的渠道基本如下：</p>
 <ul>
 <li><em>杂志报刊</em></li>
 <li><em>Newsletter</em></li>
@@ -2400,7 +2556,7 @@
 <p>总的来讲，Mail无论是工具本身还是其所链接的生态都是<strong>高度稳定可靠</strong>的，拿Mac自带的Mail客户端讲，利用好它的规则工具（RULES）可以很方便的自动化你的收件流程，像我的newsletter通过发件地址的识别都会通过规则自动进入一个单独的分组，这样就不会与其他乱七八糟的邮件混在一起。另外擅用<strong>标记</strong>(Flag)和<strong>移动</strong>(Move)也算是一个小技巧吧。</p>
 <h2 id="小结">小结</h2>
 <p>总的来说，以上两种source提供了我算是比较正式的那一类阅读的信息材料。当然，可以被称之为信息的太多了，逛逛油管，刷刷推，这些时候我也在获取信息，但好像可供分享的话题不多，不过这些也都作为我日常生活中的英语元素，多多益善嘛。就像自作安慰的把电子设备的操作系统语言都换成了英语，人为的给自己增添一点儿语言环境，聊胜于无吧。</p>
-<h1 id="hahahugoshortcode11s5hbhb">
+<h1 id="hahahugoshortcode10s6hbhb">
 
 <p style="text-align:center">下期再见～👋</p>
 </h1>
