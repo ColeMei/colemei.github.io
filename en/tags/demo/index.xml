@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Untagged on Cole World</title>
-    <link>http://localhost:1313/en/tags/untagged/</link>
-    <description>Recent content in Untagged on Cole World</description>
+    <title>Demo on Cole World</title>
+    <link>http://localhost:1313/en/tags/demo/</link>
+    <description>Recent content in Demo on Cole World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jul 2024 21:32:22 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog1</title>
       <link>http://localhost:1313/en/posts/blog1/</link>
       <pubDate>Thu, 18 Jul 2024 21:32:22 +1000</pubDate>
       <guid>http://localhost:1313/en/posts/blog1/</guid>
-      <description>hjkshdfkjsahfjkaf</description>
+      <description>hjkshdfkjsahfjkaf&#xA;asdfksaldf&#xA;sldkfjskal</description>
     </item>
   </channel>
 </rss>
