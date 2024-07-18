@@ -13,7 +13,7 @@
       <link>https://hicole.me/en/posts/new-features-in-blog-2.0/</link>
       <pubDate>Wed, 17 Jul 2024 15:31:50 +1000</pubDate>
       <guid>https://hicole.me/en/posts/new-features-in-blog-2.0/</guid>
-      <description>Admonition Shortcode This is a tip A tip banner This is a note A note banner This is a info A info banner This is a success A success banner This is a warning A warning banner This is a failure A failure banner This is a danger A danger banner This is a bug A bug banner MathJax Support Demo \begin{equation} \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \frac{1}{1 + x_1 x_2 x_3 x_4} , dx_4 , dx_3 , dx_2 , dx_1 \end{equation}</description>
+      <description>New Comment System A comments system powered by GitHub Discussions. Let visitors leave comments and reactions on your website via GitHub! Heavily inspired by utterances.&#xA;Open source. 🌏 No tracking, no ads, always free. 📡 🚫 No database needed. All data is stored in GitHub Discussions. 💬 Supports custom themes! 🌗 Supports multiple languages. 🌐 Extensively configurable. 🔧 Automatically fetches new comments and edits from GitHub. 🔃 Can be self-hosted! 🤳 Admonition Shortcode This is a tip A tip banner This is a note A note banner This is a info A info banner This is a success A success banner This is a warning A warning banner This is a failure A failure banner This is a danger A danger banner This is a bug A bug banner MathJax Support Demo \begin{equation} \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \frac{1}{1 + x_1 x_2 x_3 x_4} , dx_4 , dx_3 , dx_2 , dx_1 \end{equation}</description>
     </item>
     <item>
       <title>This is my first blog</title>
