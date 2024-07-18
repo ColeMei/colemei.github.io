@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Skillset on Cole World</title>
-    <link>http://localhost:1313/en/tags/skillset/</link>
+    <link>http://localhost:65334/en/tags/skillset/</link>
     <description>Recent content in Skillset on Cole World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Jul 2021 16:47:33 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/skillset/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:65334/en/tags/skillset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running Pentaho Data Integration on Mac bigSur (M1)</title>
-      <link>http://localhost:1313/en/posts/running-pentaho-data-integration-on-mac-bigsur-m1/</link>
+      <link>http://localhost:65334/en/posts/running-pentaho-data-integration-on-mac-bigsur-m1/</link>
       <pubDate>Sat, 10 Jul 2021 16:47:33 +0800</pubDate>
-      <guid>http://localhost:1313/en/posts/running-pentaho-data-integration-on-mac-bigsur-m1/</guid>
+      <guid>http://localhost:65334/en/posts/running-pentaho-data-integration-on-mac-bigsur-m1/</guid>
       <description>关于在M1 Mac 上安装部署PDI(kettle) 前言 截止我编写这篇笔记之时，Kettle并没有原生支持M1，所以本文大致思路是使用Rosetta转译运行，无需借助任何虚拟机。&#xA;安装步骤 配置Rosetta Terminal（强制在Intel模式下运行shell） 参考 https://cutecoder.org/software/run-command-line-apple-silicon/&#xA;打开Terminal终端的 偏好设置 → 描述文件&#xA;从左侧选择一个你喜欢的shell → 下方省略号 → 复制描述文件&#xA;点击新的描述文件 给它起一个好听的名字 就像“Rosetta Shell”&#xA;右侧点击 窗口 再给它起一个好听的标题 就像“Terminal (Intel)”&#xA;点击 shell 运行命令处写入以下 并取消勾选 在shell中运行&#xA;env /usr/bin/arch -x86_64 ``/bin/zsh --login&#xA;(可选) 将该shell设置为默认&#xA;安装 Homebrew 在arm64架构中 我们需要做两种Homebrew的安装&#xA;/usr/local/homebrew —— 服务于传统intel安装路径&#xA;/opt/homebrew —— 服务于已原生支持Apple Silicon的包&#xA;打开刚配置好的Rosetta Shell&#xA;输入以下几行命令：&#xA;cd /usr/local sudo mkdir homebrew sudo chgrp admin homebrew sudo chmod g+rwx homebrew curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew 在 ～/.</description>
     </item>
   </channel>
